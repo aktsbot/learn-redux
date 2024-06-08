@@ -1,0 +1,17 @@
+meta {
+  name: Create fav
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{domain}}/api/favs
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "text": "Icecream"
+  }
+}

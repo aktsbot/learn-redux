@@ -1,0 +1,17 @@
+meta {
+  name: Update fav
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{domain}}/api/favs/1717828286087
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "text": "The Watchmen 2008"
+  }
+}
