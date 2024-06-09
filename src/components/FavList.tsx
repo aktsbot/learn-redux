@@ -5,14 +5,14 @@ import { TRootState, TAppDispatch } from "../state/store";
 import { fetchFavs } from "../state/fav/favSlice";
 
 const FavList = () => {
-  const { favs, isLoading, error } = useSelector(
+  const { favs, isLoading, error, refresh } = useSelector(
     (state: TRootState) => state.fav
   );
   const dispatch = useDispatch<TAppDispatch>();
 
   useEffect(() => {
     dispatch(fetchFavs());
-  }, [dispatch]);
+  }, [dispatch, refresh]);
 
   return (
     <div>
