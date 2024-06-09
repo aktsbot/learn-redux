@@ -1,10 +1,7 @@
-import Counter from "./components/Counter";
-
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
-      <Counter />
+      <h1>Redux + api calls</h1>
     </>
   );
 }
